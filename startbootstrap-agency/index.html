@@ -42,6 +42,7 @@
               <a class="nav-link js-scroll-trigger" href="#services">Our Mission</a>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
@@ -50,6 +51,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
+=======
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Cultural Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Past Events</a>
+            </li>
+            <button class="btn btn-primary" onclick="window.location.href='register.html'">Register Patron</button>
+>>>>>>> added patron form page
           </ul>
         </div>
       </div>
@@ -111,11 +120,20 @@
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
+<<<<<<< HEAD
+=======
+
+>>>>>>> added patron form page
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Events Happening Near You</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -131,6 +149,11 @@
               <p class="text-muted">Illustration</p>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
@@ -145,6 +168,11 @@
               <p class="text-muted">Graphic Design</p>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
@@ -159,6 +187,11 @@
               <p class="text-muted">Identity</p>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
@@ -173,6 +206,11 @@
               <p class="text-muted">Branding</p>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
@@ -187,6 +225,11 @@
               <p class="text-muted">Website Design</p>
             </div>
           </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> added patron form page
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
@@ -216,6 +259,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
+<<<<<<< HEAD
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
@@ -231,6 +275,83 @@
                   </div>
                 </div>
               </li>
+=======
+            <ul class="timeline" id="parent">
+
+              <script>
+
+                window.setInterval(function(){
+                  /// call your function here
+                    UserAction();
+                  }, 5000);
+
+                  function createCORSRequest(method, url) {
+                    var xhr = new XMLHttpRequest();
+                    if ("withCredentials" in xhr) {
+
+                      // Check if the XMLHttpRequest object has a "withCredentials" property.
+                      // "withCredentials" only exists on XMLHTTPRequest2 objects.
+                      xhr.open(method, url, true);
+
+                    } else if (typeof XDomainRequest != "undefined") {
+
+                      // Otherwise, check if XDomainRequest.
+                      // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+                      xhr = new XDomainRequest();
+                      xhr.open(method, url);
+
+                    } else {
+
+                      // Otherwise, CORS is not supported by the browser.
+                      xhr = null;
+
+                    }
+                    return xhr;
+                  }
+                  
+
+                function UserAction() {
+                  var xhttp = createCORSRequest('GET', "https://gh7-jay.appspot.com/getEvent");
+                  if (!xhttp) {
+                    throw new Error('CORS not supported');
+                  }
+                  //var xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                      if (this.readyState == 4 && this.status == 200) {
+
+                        //alert(this.responseText[1]);
+                        //res = jQuery.parseJSON()
+                        console.log(this.responseText);
+
+                        var parentli = document.createElement("li");
+
+                        var div1 = document.createElement("div");
+                        div1.classList.add("timeline-image");
+                        
+                        var img1 = document.createElement("img");
+                        img1.classList.add("rounded-circle");
+                        img1.classList.add("img-fluid");
+
+                        div1.appendChild(img1);
+                        parentli.appendChild(div1);
+
+                        
+                        var sabkaBaap = document.getElementById("parent");
+                        sabkaBaap.appendChild(parentli);
+
+                      }
+                    };
+
+
+                    //xhr.open("GET", "https://gh7-jay.appspot.com/getEvent", true);
+                    xhttp.setRequestHeader("Content-type", "application/json");
+                    xhttp.send("Your JSON Data Here");
+
+                }
+              </script>
+
+
+>>>>>>> added patron form page
               <li class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
@@ -245,6 +366,10 @@
                   </div>
                 </div>
               </li>
+<<<<<<< HEAD
+=======
+
+>>>>>>> added patron form page
               <li>
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
@@ -259,6 +384,12 @@
                   </div>
                 </div>
               </li>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> added patron form page
               <li class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
@@ -273,11 +404,21 @@
                   </div>
                 </div>
               </li>
+<<<<<<< HEAD
               <li class="timeline-inverted">
                 <div class="timeline-image">
                   <h4>Be Part
                     <br>Of Our
                     <br>Story!</h4>
+=======
+
+
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Help us 
+                    <br>Connect
+                    <br>The World!</h4>
+>>>>>>> added patron form page
                 </div>
               </li>
             </ul>
@@ -593,6 +734,10 @@
 
   </body>
 
+<<<<<<< HEAD
 
 <!-- Mirrored from blackrockdigital.github.io/startbootstrap-agency/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Oct 2018 03:59:47 GMT -->
 </html>
+=======
+</html>
+>>>>>>> added patron form page
